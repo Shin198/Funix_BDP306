@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Decentralized Exchange</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600" rel="stylesheet">
+
+	<script type="text/javascript" src="libraries/web3.min.js"></script>
+	<script src="libraries/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1 class="main-title">Search Token</h1>
+		<div class="main-content account-detail-main-content">
+
+            <p>Current address</p>
+            <p id="current_address"></p>
+
+
+            <div class="input-group">
+                <input class="input-item" id="search_token_input" type="text" />
+                <div id="search_token_detail_button">Search</div>
+            </div>
+
+            <p>Update balance in: <span id="update_counter">10</span> seconds</p>
+            <table id="token_detail_table">
+                <tr>
+                    <td class="first-col">Name</td>
+                    <td id="token_detail_name"></td>
+                </tr>
+                <tr>
+                    <td>Symbol</td>
+                    <td id="token_detail_symbol"></td>
+                </tr>
+                <tr>
+                    <td>Current rate</td>
+                    <td id="token_detail_rate"></td>
+                </tr>
+                <tr>
+                    <td>Balance</td>
+                    <td id="token_detail_balance"></td>
+                </tr>
+            </table>
+
+            <a class="button link-button" href="index.html">Homepage</a>
+		</div>
+	</div>
+	<script src="node_modules/@metamask/onboarding/dist/metamask-onboarding.bundle.js" defer></script>
+	<script src="inititalize.js" defer></script>
+	<script src="search_token.js" defer></script>
+</body>
+
+</html>

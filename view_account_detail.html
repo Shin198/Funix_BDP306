@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Decentralized Exchange</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600" rel="stylesheet">
+
+	<script type="text/javascript" src="libraries/web3.min.js"></script>
+	<script src="libraries/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1 class="main-title">Account Detail</h1>
+		<div class="main-content account-detail-main-content">
+			<p>Update in: <span id="update_counter">10</span> seconds</p>
+			<p id="current_address_label">Current address</p>
+			<p id="current_address"></p>
+            <table id="account-balance-detail-table">
+                <tr>
+                    <th class="first-col">Token</th>
+                    <th>Balance</th>
+                </tr>
+            </table>
+
+            <a class="button link-button" href="index.html">Homepage</a>
+		</div>
+	</div>
+	<script src="node_modules/@metamask/onboarding/dist/metamask-onboarding.bundle.js" defer></script>
+	<script src="inititalize.js" defer></script>
+	<script src="view_account_detail.js" defer></script>
+</body>
+
+</html>
